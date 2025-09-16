@@ -142,7 +142,7 @@ if df is not None:
         })
     std_df = pd.DataFrame(standard_rows)
     st.markdown("### 3) Revise e edite (clique nas células para editar)")
-    edited = st.experimental_data_editor(std_df, num_rows="dynamic")
+    edited = st.data_editor(std_df, num_rows="dynamic")
     # Offer global settings: tax, freight
     st.markdown("### 4) Configurações globais (impostos / frete)")
     col_a, col_b, col_c = st.columns(3)
